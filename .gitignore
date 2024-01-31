@@ -1,0 +1,39 @@
+# Dependency directories
+node_modules/
+
+*.pid
+
+.vscode/
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Ignore .DS_Store
+.DS_Store
+
+# dotenv environment variables file
+.env
+
+# build folder
+dist/
+build/
+coverage/
+
+# Serverless directories
+.serverless/
+
+# TernJS port file
+.tern-port
+
+# VS Code COnfig
+.editorconfig
+
+#ignore updater inside services
+services/*.py
+.vscode/
+
+yarn-error.log
+
+#docs
+docs/
+

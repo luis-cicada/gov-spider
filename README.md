@@ -1,5 +1,5 @@
 # gov-spider 🕷️
-# Guatemalan Government Web Crawler (SPIDERBOT 🕸️)
+# Guatemalan 🇬🇹 Government Web Crawler (SPIDERBOT 🕸️)
 
 This project is created with the intention of helping others learn how to create spider bots for gathering information from the Guatemalan government websites and exposing it to the public.
 

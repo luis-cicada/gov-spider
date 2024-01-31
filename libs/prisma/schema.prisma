@@ -1,0 +1,23 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider      = "prisma-client-js"
+  binaryTargets = ["native", "rhel-openssl-3.0.x"]
+}
+
+datasource db {
+  provider = "mongodb"
+  url      = env("DATABASE_URL")
+}
+
+model sesiones {
+  id            String @id @default(auto()) @map("_id") @db.ObjectId
+  tipo          String
+  numero        String
+  descripcion   String
+  fecha         String
+  codigo_sesion String
+  url           String
+  status        String
+}

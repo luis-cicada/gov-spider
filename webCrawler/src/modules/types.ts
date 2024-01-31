@@ -1,8 +1,15 @@
 export interface IAsistenciaResult {
-  type: string
-  number: string
-  description: string
-  dateTime: string
+  tipo: string
+  numero: string
+  descripcion: string
+  fecha: string
   url: string
-  code: string
+  codigo_sesion: string
+  status: string
+}
+
+export enum EAsistenciaStatus {
+  UNPROCESSED = 'UNPROCESSED',
+  PROCESSING = 'PROCESSING',
+  PROCESSED = 'PROCESSED',
 }

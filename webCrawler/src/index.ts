@@ -1,5 +1,4 @@
-import { dbClient } from '@gov-spider/libs'
-import { WebCrawler } from './modules/webCrawler'
+import { WebCrawler, dbClient } from '@gov-spider/libs'
 
 const main = async () => {
   try {
@@ -12,7 +11,9 @@ const main = async () => {
       data: asistencias_data,
     })
 
-    console.log(create, 'create')
+    if (!create) {
+      throw new Error('Error creating data')
+    }
   } catch (error: any) {
     throw new Error(error)
   }
